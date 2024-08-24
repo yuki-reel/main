@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hum.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <title>リール集客コンサル</title>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('.start p').fadeIn(1600);
+            }, 500); //0.5秒後にロゴをフェードイン!
+            setTimeout(function () {
+                $('.start').fadeOut(500);
+            }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
+</head>
+
+<body id="body">
+    <div class="hum_icon">
+        <div class="openbtn1" onclick="opneHum()"><span></span><span></span><span></span></div>
+    </div>
+
+    <header class="header pc">
+        <div class="header__inner">
+            <h1 class="header__logo"><a href="index.html">リール集客コンサル</a></h1>
+            <ul class="nav__wrap">
+                <li class="nav__list"><a href="index.html#service">サービス</a></li>
+                <li class="nav__list"><a href="index.html#plan">プラン・価格</a></li>
+                <li class="nav__list nav__list--contact"><a href="index.html#contact">お問合せ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <header class="header sp">
+        <div class="header__inner">
+            <h1 class="header__logo"><a href="index.html">リール集客コンサル</a></h1>
+
+        </div>
+    </header>
+
+    <header id="hum" class="header sp hum">
+        <div class="header__inner">
+            <h1 class="header__logo"><a href="index.html">リール集客コンサル</a></h1>
+            <ul class="nav__wrap">
+                <li class="nav__list nav_openbtn1"><a href="index.html#service" onclick="opneHum()">サービス</a></li>
+                <li class="nav__list nav_openbtn1"><a href="index.html#plan" onclick="opneHum()">プラン・価格</a></li>
+                <li class="nav__list nav__list--contact nav_openbtn1"><a href="index.html#contact"
+                        onclick="opneHum()">お問合せ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section--1">
+        <div class="mainvisual">
+            <div class="mainvisual__img"><img src="images/mainvisual-1.png" alt=""></div>
+            <div class="mainvisual__text">
+                <h2 class="mainvisual__title">Instagramで発信力アップ！<br>
+                    リールで集客を加速させよう！
+                </h2>
+                <p class="mainvisual__caption">
+                    リール集客コンサルで、あなたのビジネスを次のレベルへ！魅力的なリール動画の作成から効果的なターゲティングまで、インスタグラムでの集客を最大化するための戦略をマンツーマンでサポートします。フォロワー増加や売上アップを目指し、今すぐ結果を出しましょう！
+                </p>
+                <a href="https://about.instagram.com/ja-jp/features/reels" class="mainvisual__reel__link"
+                    target="_blank">リールについて</a>
+            </div>
+            <div class="maingisual__bottom">
+                <img src="images/maingisual_bottom.png" alt="" class="pc">
+                <img src="images/maingisual_bottom_sp.png" alt="" class="sp">
+            </div>
+        </div>
+    </section>
+
+    <section class="section--2" id="service">
+        <h2 class="section__title">サービス内容</h2>
+        <p class="section__caption">サービス期間は6ヶ月で、プランに合わせてそれぞれの内容をご提供いたします！</p>
+
+        <ul class="service__list__wrap">
+            <li class="service__list">
+                <div class="service__list__img"><img src="images/service_img-1.png" alt=""></div>
+                <p class="service__list__caption">月数回のマンツーマン<br>Zoom(90分)相談！</p>
+                <div class="service__list__point__icon"><img src="images/service_point_icon.png" alt=""></div>
+            </li>
+            <li class="service__list">
+                <div class="service__list__img"><img src="images/service_img-2.png" alt=""></div>
+                <p class="service__list__caption">チャットでのご質問も<br>サポートいたします！</p>
+                <div class="service__list__point__icon"><img src="images/service_point_icon.png" alt=""></div>
+            </li>
+            <li class="service__list">
+                <div class="service__list__img"><img src="images/service_img-3.png" alt=""></div>
+                <p class="service__list__caption">テキスト・動画・音声の<br>添削サービス！</p>
+                <div class="service__list__point__icon"><img src="images/service_point_icon.png" alt=""></div>
+            </li>
+            <li class="service__list">
+                <div class="service__list__img"><img src="images/service_img-4.png" alt=""></div>
+                <p class="service__list__caption">プレミアムプランで<br>電話相談も可能！</p>
+                <div class="service__list__point__icon"><img src="images/service_point_icon.png" alt=""></div>
+            </li>
+        </ul>
+    </section>
+    <div class="section__margin"><img src="images/serction_margin.png" alt=""></div>
+
+    <section class="section--3" id="plan">
+        <h2 class="section__title">プラン・価格</h2>
+        <p class="section__caption">3種類のプランをご用意しました。</p>
+        <ul class="plan__list__wrap">
+            <li class="plan__list">
+                <h3 class="plan__list__title">ライト</h3>
+                <p class="plan__list__price"><span>￥</span>500,000</p>
+                <div class="plan__list__price__line"><img src="images/plan_list_price_line.png" alt=""></div>
+                <p class="plan__list__term">期間6か月</p>
+                <ul class="plan__list__service__wrap">
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">マンツーマン Zoom90分（1回/月）</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">チャット質問</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">添削サービス<br>
+                            （テキスト・動画・音声）</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="plan__list">
+                <h3 class="plan__list__title">スタンダード</h3>
+                <p class="plan__list__price"><span>￥</span>550,000</p>
+                <div class="plan__list__price__line"><img src="images/plan_list_price_line.png" alt=""></div>
+                <p class="plan__list__term">期間6か月</p>
+                <ul class="plan__list__service__wrap">
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">マンツーマン Zoom90分（2回/月）</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">チャット質問</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">添削サービス<br>
+                            （テキスト・動画・音声）</p>
+                    </li>
+                </ul>
+                <div class="plan__list__point"><img src="images/plan_point.png" alt=""></div>
+            </li>
+            <li class="plan__list">
+                <h3 class="plan__list__title">プレミアム</h3>
+                <p class="plan__list__price"><span>￥</span>900,000</p>
+                <div class="plan__list__price__line"><img src="images/plan_list_price_line.png" alt=""></div>
+                <p class="plan__list__term">期間6か月</p>
+                <ul class="plan__list__service__wrap">
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">マンツーマン Zoom90分（4回/月）</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">チャット質問</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">添削サービス<br>
+                            （テキスト・動画・音声）</p>
+                    </li>
+                    <li class="plan__list__service">
+                        <div class="plan__list__service__icon"><img src="images/plan_service_icon.png" alt="">
+                        </div>
+                        <p class="plan__list__service__caption">電話相談OK</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section--4" id="contact">
+        <h2 class="section__title">SNS・お問合せ</h2>
+        <p class="section__caption">ご連絡・お問合せがございましたら、DMまたはLINEへご連絡ください。</p>
+        <ul class="sns__list__wrap">
+            <li class="sns_icon">
+                <img src="images/contact_line.png" alt="">
+            </li>
+        </ul>
+
+    </section>
+
+    <a href="#body">
+        <div class="totop">
+            <img src="images/totop.png" alt="">
+        </div>
+    </a>
+
+    <footer class="footer">
+        <h1 class="footer__logo"><a href="index.html#body">リール集客コンサル</a></h1>
+        <ul class="footer__nav__wrap">
+            <li class="footer__nav__list"><a href="#service">サービス</a></li>
+            <li class="footer__nav__list"><a href="#plan">プラン・価格</a></li>
+            <li class="footer__nav__list footer__nav__list--transactions"><a href="transactions.html">特定商取引法に基づく表記</a>
+            </li>
+        </ul>
+        <p class="footer__copy">©2024　リール集客コンサル</p>
+        <div class="footer__chara"><img src="images/footer_chara_img.png" alt=""></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+
+        // ハンバーガーナビゲーション
+        $(".openbtn1").click(function () {
+            $(this).toggleClass('active');
+        });
+        $(".nav_openbtn1").click(function () {
+            $(".openbtn1").toggleClass('active');
+        });
+
+
+        var opneHumNav = 0;
+        function opneHum() {
+            const anchors = document.querySelectorAll("#hum a");
+
+            if (opneHumNav == 0) {
+                opneHumNav = 1;
+                document.getElementById("hum").style.opacity = "1";
+
+                // 各 a タグのスタイルを変更
+                anchors.forEach(anchor => {
+                    anchor.style.pointerEvents = "all";
+                });
+            }
+            else {
+                opneHumNav = 0;
+                document.getElementById("hum").style.opacity = "0";
+                // 各 a タグのスタイルを変更
+                anchors.forEach(anchor => {
+                    anchor.style.pointerEvents = "none";
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

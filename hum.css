@@ -1,0 +1,115 @@
+.hum_icon {
+    position: fixed;
+    right: 10px;
+    z-index: 30000;
+    margin: 10px;
+    display: none;
+    top: 10px;
+    padding: 7px;
+
+}
+
+#hum {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFE9EE;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hum a {
+    pointer-events: none;
+}
+
+.hum__g-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+/* Common Css must add */
+.openbtn1 {
+    position: relative;
+    /*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+/*ボタン内側*/
+.openbtn1 span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 3px;
+    background: #DC3859;
+    width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+    top: 31px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+    /*真ん中の線は透過*/
+}
+
+.openbtn1.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+@media screen and (max-width:1300px) {
+    .hum_icon {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .hum_icon {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .hum_icon {
+        display: block;
+    }
+
+}
